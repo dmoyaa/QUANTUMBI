@@ -44,13 +44,13 @@ const Services: React.FC = () => {
                 
                 <div className="text-center mb-16">
                     <div>
-                        <div className="text-[120px] font-bold text-white leading-tight">
-                                QUANTUM<span className="text-blue-500">BI</span>
+                        <div className="text-4xl sm:text-6xl md:text-7xl lg:text-[100px] xl:text-[120px] font-bold text-white leading-tight text-center">
+                            QUANTUM<span className="text-blue-500">BI</span>
                         </div>
-                        <div className="text-[45px] font-normal mt-0.5 tracking-widest text-slate-400">
-                                S.A.S
-                        </div>
-                    </div>
+                    <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[45px] font-normal mt-1 tracking-widest text-slate-400 text-center">
+                        S.A.S
+                     </div>
+                </div>
                     <h2 className="mt-20 text-4xl lg:text-5xl font-bold text-white tracking-tight">
                         Lo que <span className="text-blue-500">Ofrecemos</span>
                     </h2>
