@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
                         Get In <span className="text-blue-500">Touch</span>
                     </h2>
                     <p className="mt-4 text-lg text-slate-400 max-w-2xl mx-auto">
-                        Have a project in mind or just want to learn more? We'd love to hear from you.
+                        ¿Tienes algun proyecto en mente? ¡Consultalo con nosotros!
                     </p>
                 </div>
                 <div className="max-w-2xl mx-auto">
@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
                                 id="name"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                placeholder="Your Name"
+                                placeholder="Your Name."
                                 className="w-full bg-slate-800 border border-slate-700 rounded-lg p-4 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow"
                             />
                         </div>
@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
                                 id="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                placeholder="Your Email"
+                                placeholder="Your Email."
                                 className="w-full bg-slate-800 border border-slate-700 rounded-lg p-4 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow"
                             />
                         </div>
@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                                 rows={5}
-                                placeholder="Your Message"
+                                placeholder="Your Message."
                                 className="w-full bg-slate-800 border border-slate-700 rounded-lg p-4 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow"
                             ></textarea>
                         </div>
