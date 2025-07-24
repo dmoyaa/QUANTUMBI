@@ -8,11 +8,10 @@ const About: React.FC = () => {
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                     <div className="lg:w-1/2">
                         <img 
-                            src="images/Quantum.png" 
+                            src="https://cdn.pixabay.com/photo/2024/11/20/06/49/network-9210511_1280.jpg" 
                             alt="Quantum BI Team Collaboration"
                             className="rounded-xl shadow-2xl w-full h-auto object-cover"
                         />
-                        <p className="mt-6 text-lg text-slate-300 leading-relaxed font-bold hover:text-white transition-colors duration-300" >Imagen generada con IA *</p>
                     </div>
                     <div className="lg:w-1/2 text-center lg:text-left">
                         <h2 className="text-4xl lg:text-5xl font-bold text-white tracking-tight">
