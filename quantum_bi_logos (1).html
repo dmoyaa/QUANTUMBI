@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuestas de Logo - Quantum BI S.A.S</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        
+        .logos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .logo-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .logo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .logo-title {
+            font-size: 1.2em;
+            color: #34495e;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .logo-container {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo-description {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+        
+        /* Logo 1 - Quantum Particles */
+        .logo1 {
+            font-size: 2.2em;
+            font-weight: 700;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .logo1 .company-name {
+            font-size: 1em;
+            line-height: 1.2;
+        }
+        
+        .logo1 .company-type {
+            font-size: 0.4em;
+            font-weight: 400;
+            margin-top: 2px;
+            letter-spacing: 2px;
+        }
+        
+        .particles {
+            position: absolute;
+            top: -10px;
+            right: -20px;
+            width: 30px;
+            height: 30px;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #667eea;
+            border-radius: 50%;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .particle:nth-child(1) { top: 5px; left: 5px; animation-delay: 0s; }
+        .particle:nth-child(2) { top: 15px; left: 15px; animation-delay: 1s; }
+        .particle:nth-child(3) { top: 25px; left: 5px; animation-delay: 2s; }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); opacity: 1; }
+            50% { transform: translateY(-10px); opacity: 0.7; }
+        }
+        
+        /* Logo 2 - Circuit Board */
+        .logo2 {
+            font-size: 2em;
+            font-weight: 600;
+            color: #2c3e50;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .logo2 .company-name {
+            display: block;
+            line-height: 1.2;
+        }
+        
+        .logo2 .company-type {
+            font-size: 0.4em;
+            font-weight: 400;
+            margin-top: 2px;
+            letter-spacing: 2px;
+        }
+        
+        .circuit {
+            position: absolute;
+            top: -5px;
+            left: -10px;
+            right: -10px;
+            bottom: -5px;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+        }
+        
+        .circuit::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 6px;
+            height: 6px;
+            background: #e74c3c;
+            border-radius: 50%;
+        }
+        
+        .circuit::after {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 6px;
+            height: 6px;
+            background: #2ecc71;
+            border-radius: 50%;
+        }
+        
+        /* Logo 3 - Data Cube */
+        .logo3 {
+            font-size: 2em;
+            font-weight: 600;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .logo3 .text-part {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .logo3 .company-name {
+            line-height: 1.2;
+        }
+        
+        .logo3 .company-type {
+            font-size: 0.4em;
+            font-weight: 400;
+            margin-top: 2px;
+            letter-spacing: 2px;
+        }
+        
+        .cube {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            transform: rotate(45deg);
+            position: relative;
+            border-radius: 4px;
+        }
+        
+        .cube::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border: 2px solid white;
+            border-radius: 2px;
+        }
+        
+        /* Logo 4 - Quantum Wave */
+        .logo4 {
+            font-size: 2em;
+            font-weight: 600;
+            color: #2c3e50;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .logo4 .company-name {
+            line-height: 1.2;
+        }
+        
+        .logo4 .company-type {
+            font-size: 0.4em;
+            font-weight: 400;
+            margin-top: 2px;
+            letter-spacing: 2px;
+        }
+        
+        .wave {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #667eea);
+            background-size: 200% 100%;
+            animation: wave 2s ease-in-out infinite;
+        }
+        
+        @keyframes wave {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Logo 5 - Neural Network */
+        .logo5 {
+            font-size: 2em;
+            font-weight: 600;
+            color: #2c3e50;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .logo5 .company-name {
+            line-height: 1.2;
+        }
+        
+        .logo5 .company-type {
+            font-size: 0.4em;
+            font-weight: 400;
+            margin-top: 2px;
+            letter-spacing: 2px;
+        }
+        
+        .network {
+            position: absolute;
+            top: -15px;
+            right: -30px;
+            width: 60px;
+            height: 30px;
+        }
+        
+        .node {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #3498db;
+            border-radius: 50%;
+        }
+        
+        .node1 { top: 5px; left: 5px; }
+        .node2 { top: 20px; left: 5px; }
+        .node3 { top: 12px; right: 5px; }
+        
+        .connection {
+            position: absolute;
+            height: 1px;
+            background: #3498db;
+            opacity: 0.6;
+        }
+        
+        .conn1 { top: 8px; left: 8px; width: 42px; transform: rotate(20deg); }
+        .conn2 { top: 23px; left: 8px; width: 42px; transform: rotate(-20deg); }
+        
+        /* Logo 6 - Minimal Geometric */
+        .logo6 {
+            font-size: 2em;
+            font-weight: 300;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .logo6 .text-part {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .logo6 .company-name {
+            line-height: 1.2;
+        }
+        
+        .logo6 .company-type {
+            font-size: 0.4em;
+            font-weight: 400;
+            margin-top: 2px;
+            letter-spacing: 2px;
+        }
+        
+        .geometric {
+            display: flex;
+            gap: 3px;
+        }
+        
+        .bar {
+            width: 4px;
+            background: linear-gradient(180deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+        
+        .bar1 { height: 30px; }
+        .bar2 { height: 20px; }
+        .bar3 { height: 40px; }
+        .bar4 { height: 25px; }
+        
+        .color-variations {
+            margin-top: 40px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+        }
+        
+        .color-variations h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .color-option {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .color-sample {
+            width: 100px;
+            height: 40px;
+            margin: 0 auto 10px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        
+        .blue-gradient { background: linear-gradient(45deg, #667eea, #764ba2); }
+        .tech-gradient { background: linear-gradient(45deg, #2196F3, #21CBF3); }
+        .professional { background: linear-gradient(45deg, #2c3e50, #34495e); }
+        .energy { background: linear-gradient(45deg, #f093fb, #f5576c); }
+        .success { background: linear-gradient(45deg, #4CAF50, #8BC34A); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Propuestas de Logo - Quantum BI S.A.S</h1>
+        
+        <div class="logos-grid">
+            <div class="logo-card">
+                <div class="logo-title">Opción 1: Quantum Particles</div>
+                <div class="logo-container">
+                    <div class="logo1">
+                        <div class="company-name">QUANTUM BI</div>
+                        <div class="company-type">S.A.S</div>
+                        <div class="particles">
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-description">
+                    Logo con partículas flotantes que representan la naturaleza cuántica y la innovación tecnológica.
+                </div>
+            </div>
+            
+            <div class="logo-card">
+                <div class="logo-title">Opción 2: Circuit Board</div>
+                <div class="logo-container">
+                    <div class="logo2">
+                        <div class="circuit"></div>
+                        <div class="company-name">QUANTUM BI</div>
+                        <div class="company-type">S.A.S</div>
+                    </div>
+                </div>
+                <div class="logo-description">
+                    Diseño que evoca circuitos y tecnología, ideal para una empresa de inteligencia de negocios.
+                </div>
+            </div>
+            
+            <div class="logo-card">
+                <div class="logo-title">Opción 3: Data Cube</div>
+                <div class="logo-container">
+                    <div class="logo3">
+                        <div class="cube"></div>
+                        <div class="text-part">
+                            <div class="company-name">QUANTUM BI</div>
+                            <div class="company-type">S.A.S</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-description">
+                    Cubo de datos que simboliza la estructura y organización de la información empresarial.
+                </div>
+            </div>
+            
+            <div class="logo-card">
+                <div class="logo-title">Opción 4: Quantum Wave</div>
+                <div class="logo-container">
+                    <div class="logo4">
+                        <div class="company-name">QUANTUM BI</div>
+                        <div class="company-type">S.A.S</div>
+                        <div class="wave"></div>
+                    </div>
+                </div>
+                <div class="logo-description">
+                    Onda cuántica animada que representa el flujo de datos y la energía de la información.
+                </div>
+            </div>
+            
+            <div class="logo-card">
+                <div class="logo-title">Opción 5: Neural Network</div>
+                <div class="logo-container">
+                    <div class="logo5">
+                        <div class="company-name">QUANTUM BI</div>
+                        <div class="company-type">S.A.S</div>
+                        <div class="network">
+                            <div class="node node1"></div>
+                            <div class="node node2"></div>
+                            <div class="node node3"></div>
+                            <div class="connection conn1"></div>
+                            <div class="connection conn2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-description">
+                    Red neuronal que simboliza la inteligencia artificial y el análisis predictivo.
+                </div>
+            </div>
+            
+            <div class="logo-card">
+                <div class="logo-title">Opción 6: Analytics Bars</div>
+                <div class="logo-container">
+                    <div class="logo6">
+                        <div class="geometric">
+                            <div class="bar bar1"></div>
+                            <div class="bar bar2"></div>
+                            <div class="bar bar3"></div>
+                            <div class="bar bar4"></div>
+                        </div>
+                        <div class="text-part">
+                            <div class="company-name">QUANTUM BI</div>
+                            <div class="company-type">S.A.S</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-description">
+                    Barras de análisis que representan gráficos y métricas de Business Intelligence.
+                </div>
+            </div>
+        </div>
+        
+        <div class="color-variations">
+            <h2>Variaciones de Color</h2>
+            <div class="color-grid">
+                <div class="color-option">
+                    <div class="color-sample blue-gradient">
+                        <div>QUANTUM BI</div>
+                        <div style="font-size: 0.7em; margin-top: 2px;">S.A.S</div>
+                    </div>
+                    <div>Azul Degradado</div>
+                    <small>Confianza y tecnología</small>
+                </div>
+                <div class="color-option">
+                    <div class="color-sample tech-gradient">
+                        <div>QUANTUM BI</div>
+                        <div style="font-size: 0.7em; margin-top: 2px;">S.A.S</div>
+                    </div>
+                    <div>Tech Blue</div>
+                    <small>Innovación y futuro</small>
+                </div>
+                <div class="color-option">
+                    <div class="color-sample professional">
+                        <div>QUANTUM BI</div>
+                        <div style="font-size: 0.7em; margin-top: 2px;">S.A.S</div>
+                    </div>
+                    <div>Profesional</div>
+                    <small>Elegancia y seriedad</small>
+                </div>
+                <div class="color-option">
+                    <div class="color-sample energy">
+                        <div>QUANTUM BI</div>
+                        <div style="font-size: 0.7em; margin-top: 2px;">S.A.S</div>
+                    </div>
+                    <div>Energético</div>
+                    <small>Creatividad y dinamismo</small>
+                </div>
+                <div class="color-option">
+                    <div class="color-sample success">
+                        <div>QUANTUM BI</div>
+                        <div style="font-size: 0.7em; margin-top: 2px;">S.A.S</div>
+                    </div>
+                    <div>Crecimiento</div>
+                    <small>Éxito y prosperidad</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
